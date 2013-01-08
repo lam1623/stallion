@@ -1,0 +1,31 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="stallion/MainWindow.cs">
+    <Files>
+      <File FileName="stallion/MainWindow.cs" Line="158" Column="6" />
+      <File FileName="stallion/Process.cs" Line="57" Column="17" />
+      <File FileName="stallion/Videos.cs" Line="244" Column="34" />
+      <File FileName="stallion/Preference.cs" Line="1" Column="1" />
+      <File FileName="stallion/SelectFileAndFolder.cs" Line="25" Column="42" />
+      <File FileName="stallion/Main.cs" Line="23" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="stallion" expanded="True">
+            <Node name="MainWindow.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True">
+          <Node name="stallion" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<presets>
+   <MP3>
+    <label>MP3</label>
+    <params>-ovc frameno -oac mp3lame -of rawaudio -lameopts cbr:br=128</params>
+    <extension>mp3</extension>
+    <category>Audio</category>
+  </MP3>  
+
+  <AVIxvidf>
+    <label>XVID FullScreen</label>
+    <params>-vf scale=544:288 -oac mp3lame -lameopts cbr=128 -ovc xvid -xvidencopts bitrate=1000 -lavcopts aspect=4/3</params>
+    <extension>avi</extension>
+    <category>AVI</category>
+  </AVIxvidf>
+
+   <AVIxvidw>
+    <label>XVID Widescreen</label>
+    <params>-vf scale=704:384 -oac mp3lame -lameopts cbr=128 -ovc xvid -xvidencopts bitrate=1200 -lavcopts aspect=19/6</params>
+    <extension>avi</extension>
+    <category>AVI</category>
+  </AVIxvidw>
+
+<AVIdivx>
+    <label>DIVX</label>
+    <params>-mc 0 -ofps 18.000 -vf-add crop=0:0:-1:-1 -vf-add scale=320:240 -vf-add expand=320:240:-1:-1:1 -srate 44100 -ovc lavc -lavcopts vcodec=mpeg4 -lavcopts vbitrate=1200 -ffourcc DIVX -oac mp3lame -lameopts vbr=0 -lameopts br=64 -lameopts vol=0 -lameopts mode=0 -lameopts aq=7 -lameopts padding=3 -af volnorm</params>
+    <extension>avi</extension>
+    <category>AVI</category>
+  </AVIdivx>
+
+  <VCDmpgf>
+    <label>VCD-NTSC (mpg1)</label>
+    <params>-oac lavc -ovc lavc -of mpeg -mpegopts format=xvcd -vf scale=352:240 -srate 44100 -af lavcresample=44100 -lavcopts vcodec=mpeg1video:keyint=18:vrc_buf_size=327:vrc_minrate=1152:vbitrate=1152:vrc_maxrate=1152:acodec=mp2:abitrate=224:aspect=4/3 -ofps 30000/1001</params>
+    <extension>mpg</extension>
+    <category>MPG</category>
+  </VCDmpgf>
+
+  <VCDmpgw>
+    <label>VCD-PAL (mpg1)</label>
+    <params>-oac lavc -ovc lavc -of mpeg -mpegopts format=xvcd -vf scale=352:288 -srate 44100 -af lavcresample=44100 -lavcopts vcodec=mpeg1video:keyint=15:vrc_buf_size=327:vrc_minrate=1152:vbitrate=1152:vrc_maxrate=1152:acodec=mp2:abitrate=224:aspect=16/9 -ofps 25</params>
+    <extension>mpeg</extension>
+   <category>MPG</category>
+   </VCDmpgw>
+
+    <VCDmpgfs>
+    <label>SVCD-NTSC (mpg2)</label>
+    <params>-oac lavc -ovc lavc -of mpeg -mpegopts format=xsvcd -vf scale=480:480 -srate 44100 -af lavcresample=44100 -lavcopts vcodec=mpeg2video:mbd=2:keyint=18:vrc_buf_size=917:vrc_minrate=600:vbitrate=2500:vrc_maxrate=2500:acodec=mp2:abitrate=224:aspect=16/9 -ofps 30000/1001</params>
+    <extension>mpeg</extension>
+   <category>MPG</category>
+   </VCDmpgfs>
+  
+    <VCDmpgws>
+    <label>SVCD-PAL (mpg2)</label>
+    <params>-oac lavc -ovc lavc -of mpeg -mpegopts format=xvcd -vf scale=352:288 -srate 44100 -af lavcresample=44100 -lavcopts vcodec=mpeg1video:keyint=15:vrc_buf_size=327:vrc_minrate=1152:vbitrate=1152:vrc_maxrate=1152:acodec=mp2:abitrate=224:aspect=16/9 -ofps 25</params>
+    <extension>mpeg</extension>
+   <category>MPG</category>
+   </VCDmpgws>
+
+ <FLV>
+    <label>flv</label>
+    <params> -forceidx -of lavf -oac mp3lame -lameopts abr:br=56 -srate 22050 -ovc lavc -lavcopts vcodec=flv:vbitrate=250:mbd=2:mv0:trell:v4mv:cbp:last_pred=3 -vf scale=360:240</params>
+    <extension>flv</extension>
+   <category>FLV</category>
+   </FLV>
+
+   <IPOD>
+    <label>Ipod nano</label>
+    <params>-oac lavc -ovc lavc -lavcopts vcodec=mpeg4:v4mv:mbd=2:trell:aic=2:cmp=2:subcmp=2:acodec=aac:vglobal=1:aglobal=1:vbitrate=800:abitrate=128 -vf  scale=320:240 -of lavf -lavfopts format=mp4</params>
+    <extension>m4v</extension>
+   <category>MP4</category>
+   </IPOD>
+
+   <IPOD>
+    <label>mp4</label>
+    <params>-oac lavc -ovc lavc -of lavf -lavcopts aglobal=1:vglobal=1:vcodec=mpeg4:acodec=aac -af lavcresample=24000 -vf harddup -lavfopts format=psp -ofps 30000/1001 -vf scale=320:240</params>
+    <extension>mp4</extension>
+   <category>MP4</category>
+   </IPOD>
+   
+
+</presets>
